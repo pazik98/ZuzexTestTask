@@ -33,3 +33,16 @@ databaseChangeLog:
               - column:
                   name: owner_id
                   type: BIGINT
+        - createTable:
+            tableName: registration
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+              - column:
+                  name: house_id
+                  type: BIGINT
+              - column:
+                  name: user_id
+                  type: BIGINT
