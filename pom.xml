@@ -66,7 +66,7 @@
 				<artifactId>liquibase-maven-plugin</artifactId>
 				<version>${liquibase.version}</version>
 				<configuration>
-					<driver>org.postgresql.Driver</driver>
+					<driver>org.postgresfql.Driver</driver>
 					<url>jdbc:postgresql://localhost:5432/zuzextestdb</url>
 					<username>postgres</username>
 					<password>postgres</password>

@@ -5,7 +5,7 @@ databaseChangeLog:
       author: pazik98
       changes:
         - createTable:
-            tableName: user
+            tableName: app_user
             columns:
               - column:
                   name: id
