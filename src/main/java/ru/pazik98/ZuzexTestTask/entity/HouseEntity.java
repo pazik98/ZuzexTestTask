@@ -43,7 +43,7 @@ public class HouseEntity {
     public void setAddress(String address) {
         this.address = address;
     }
-    
+
     public long getOwnerId() {
         return ownerId;
     }

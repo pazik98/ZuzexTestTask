@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/house")
+@RequestMapping("/houses")
 public class HouseController {
 
     private final HouseService houseService;
