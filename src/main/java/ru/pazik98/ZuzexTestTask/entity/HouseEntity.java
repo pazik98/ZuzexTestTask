@@ -1,5 +1,6 @@
 package ru.pazik98.ZuzexTestTask.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 @Entity
@@ -7,7 +8,7 @@ import jakarta.persistence.*;
 public class HouseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private long id;
 
@@ -15,6 +16,7 @@ public class HouseEntity {
     private String address;
 
     @Column(name = "owner_id")
+    @JsonProperty("owner_id")
     private long ownerId;
 
     public HouseEntity() {
@@ -41,7 +43,7 @@ public class HouseEntity {
     public void setAddress(String address) {
         this.address = address;
     }
-
+    
     public long getOwnerId() {
         return ownerId;
     }
